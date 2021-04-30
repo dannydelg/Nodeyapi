@@ -1,0 +1,54 @@
+@api = http://localhost:4000
+
+
+
+###
+POST {{api}}/api/user/register
+content-type: application/json
+{
+    "name":"Luisdelgado",
+    "email":"luis_gdo@hotmail.com",
+    "password":"123123123"
+}
+
+
+###
+GET {{api}}/videos
+content-type: application/json
+
+{
+   
+    "skip": 0,
+    "limit": 2
+}
+
+
+###
+
+GET {{api}}/videos/60497a372b04f513c4124b0a
+
+###
+
+
+POST {{api}}/videos
+content-type: application/json
+
+{
+   
+    "description": "Primera parte en video de la Historia de Fundeico",
+    "url": "https://www.youtube.com/26DEXIxxxccxxxfff"
+}
+
+###
+DELETE {{api}}/videos/604c223bee6dd902d049a718
+
+###
+
+PUT  {{api}}/videos/60498350c733702f8c3b6ec8
+content-Type: application/json
+
+{
+
+    "title": "Nuevo titulo modificado"
+}
+
